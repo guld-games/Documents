@@ -4,7 +4,7 @@ Agreement made _________ (date), between _____________________, known by signing
 
 ### 1) OBJECTIVE
 
-In this game, both players pick a number between `1` and `32768`. There are exactly `16384` each of odd and even numbers in this range. Without knowning PLAYER-1's number, PLAYER-2 guesses whether the sum of their numbers will be odd or even. Both players reveal their numbers, and if PLAYER-2 guessed correctly, they win, otherwise PLAYER-1 wins.
+In this game, PLAYER-1 picks a number between `1` and `32768` and PLAYER-2 between `1` and `32767`. Without knowning PLAYER-1's number, PLAYER-2 guesses whether the sum of their numbers will be odd or even. Both players reveal their numbers, and if PLAYER-2 guessed correctly, they win, otherwise PLAYER-1 wins.
 
 ### 2) GAME PLAY
 
