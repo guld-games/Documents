@@ -6,7 +6,7 @@ Agreement made _________ (date), between _____________________, known by signing
 
 The DEALER first establishes how much the PLAYER will wager, known as the BET. The DEALER then chooses a maximum number between `1` and `65535` known as the MAX. The DEALER must deposit BET multiplied by MAX to the contact.
 
-The DEALER then picks a second number between `0` and MAX, known as the SECRET. Without knowning SECRET, PLAYER guesses a number between `0` and MAX. If PLAYER guessed correctly, they win thier BET multiplied by MAX, otherwise the DEALER wins BET.
+The DEALER then picks a second number between `0` and MAX, known as the SECRET. Without knowning SECRET, PLAYER guesses a number between `0` and MAX. If PLAYER guessed correctly, they win their BET multiplied by MAX, otherwise the DEALER wins BET.
 
 ### 2) GAME PLAY
 
