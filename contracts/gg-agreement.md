@@ -95,7 +95,7 @@ The MEMBER is allowed to send GG from any game winning contract into their staki
 
 WHEREAS MEMBER was a winner of GAME-INSTANCE.
 
-WHEREAS AMOUNT is a positive integer multiple of 1000.
+WHEREAS AMOUNT is less than or equal to the minimum bet for GAME-INSTANCE.
 
 ``` ledger
 DATE * GG stake
@@ -114,7 +114,7 @@ WHEREAS GAME is a known game rule set i.e. TEXAS HOLD'EM.
 
 WHEREAS GAME-INSTANCE is an officially tracked instance of GAME.
 
-WHEREAS AMOUNT is an integer multiple of 1000.
+WHEREAS AMOUNT is less than or equal to the balance of `gg:Equity:MEMBER`.
 
 ``` ledger
 DATE * GG unstake
