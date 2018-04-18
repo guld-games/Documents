@@ -16,6 +16,8 @@ The GROUP will be governed in a Proof of Stake model. Members of gg group can st
 # TODO vote counting function
 ```
 
+Changes to this document, or other game contracts requires at minimum 51% of `gg:Equity` approval.
+
 ### Economics
 
 ##### Future Price Database
@@ -139,7 +141,7 @@ DATE * GG unstake
     gg:Games:GAME:GAME-INSTANCE    AMOUNT GG
 ```
 
-The MEMBER i also allowed to unstake at any time, directly into their Assets account.
+The MEMBER is also allowed to unstake at any time, directly into their Assets account.
 
 ``` ledger
 DATE * GG unstake
