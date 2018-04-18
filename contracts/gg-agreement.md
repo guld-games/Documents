@@ -4,8 +4,8 @@ Agreement made _________ (date), by ______________________ (name) known as MEMBE
 
 ```
 GROUP = gg
-FINGERPRINT = 
-MEMBER = 
+FINGERPRINT =
+MEMBER =
 ```
 
 ### Governance
@@ -54,11 +54,14 @@ DATE * register group
     guld:Income:register:group:gg:MEMBER   -AMOUNT GULD
 ```
 
-##### Claim
+##### Claim Burn
 
-MEMBER may withdraw any burned GULD available in the `guld:Income:register:group:gg:MEMBER` account to GAME-INSTANCE at the BURNRATE at TIME.
+Once MEMBER has burned GULD for the `gg` group, anyone may create the corresponding `GG` issuance, and transfer into MEMBER's `MEMBER:Assets` account.
+
+Any burned GULD available in the `guld:Income:register:group:gg:MEMBER` account to GAME-INSTANCE must be converted at the BURNRATE at TIME.
 
 WHEREAS AMOUNT is a positive number of GULD.
+
 WHEREAS GGAMOUNT is equal to AMOUNT * BURNRATE.
 
 ``` ledger
@@ -66,42 +69,55 @@ DATE * claim burn
     ; timestamp: TIME
     guld:Income:register:group:gg:MEMBER    AMOUNT GULD
     guld:Income:register:group:gg    -AMOUNT GULD
-    gg:Games:GAME:GAME-INSTANCE    GGAMOUNT GG
+    MEMBER:Assets   GGAMOUNT GG
     gg:Liabilities    -GGAMOUNT GG
 ```
 
-##### Transfer
+##### Funding
 
-The MEMBER is allowed to send GG from any game winning contract into any other open game.
+WHEREAS GAME is a known game rule set i.e. TEXAS HOLD'EM.
 
-WHEREAS MEMBER was a winner of GAME-INSTANCE.
-
-WHEREAS GAME-2 is a known game rule set i.e. TEXAS HOLD'EM.
-
-WHEREAS GAME-INSTANCE-2 is an officially tracked instance of GAME-2.
+WHEREAS GAME-INSTANCE is an officially tracked instance of GAME.
 
 WHEREAS AMOUNT is a positive number of GG.
 
 ``` ledger
-DATE * GG transfer
+DATE * GG funding
     ; timestamp: TIME
-    gg:Games:GAME:GAME-INSTANCE:MEMBER   -AMOUNT GG
-    gg:Games:GAME-2:GAME-INSTANCE-2    AMOUNT GG
+    MEMBER:Assets    -AMOUNT GG
+    gg:Games:GAME:GAME-INSTANCE    AMOUNT GG
 ```
 
-##### Stake
+##### Transfer
 
-The MEMBER is allowed to send GG from any game winning contract into their staking account.
+The MEMBER is allowed to send GG from their own `MEMBER:Assets` account to any other `gg:Assets` account known as OTHER for this clause.
+
+WHEREAS AMOUNT is a positive number of GG, and MEMBER has at least AMOUNT in `MEMBER:Assets`.
+
+``` ledger
+DATE * GG transfer
+    ; timestamp: TIME
+    MEMBER:Assets   -AMOUNT GG
+    gg:Assets:OTHER    AMOUNT GG
+```
+
+##### Claim Win (Optional Stake)
+
+The MEMBER is allowed to send GG from any game winning contract into their Assets and/or staking account.
 
 WHEREAS MEMBER was a winner of GAME-INSTANCE.
 
-WHEREAS AMOUNT is less than or equal to the minimum bet for GAME-INSTANCE.
+WHEREAS STAKE_AMOUNT is less than or equal to the minimum bet for GAME-INSTANCE.
+
+WHEREAS AMOUNT is the total winnings minus STAKE_AMOUNT
 
 ``` ledger
-DATE * GG stake
+DATE * GG claim win
     ; timestamp: TIME
-    gg:Games:GAME:GAME-INSTANCE:MEMBER    AMOUNT GG
-    gg:Equity:MEMBER    AMOUNT GG
+    gg:Games:GAME:GAME-INSTANCE:MEMBER    -AMOUNT GG
+    MEMBER:Assets    -AMOUNT GG
+    gg:Games:GAME:GAME-INSTANCE:MEMBER    -STAKE_AMOUNT GG
+    gg:Equity:MEMBER    -STAKE_AMOUNT GG
 ```
 
 ##### Unstake
@@ -121,4 +137,13 @@ DATE * GG unstake
     ; timestamp: TIME
     gg:Equity:MEMBER    -AMOUNT GG
     gg:Games:GAME:GAME-INSTANCE    AMOUNT GG
+```
+
+The MEMBER i also allowed to unstake at any time, directly into their Assets account.
+
+``` ledger
+DATE * GG unstake
+    ; timestamp: TIME
+    gg:Equity:MEMBER    -AMOUNT GG
+    MEMBER:Assets    AMOUNT GG
 ```
