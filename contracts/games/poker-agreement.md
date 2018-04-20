@@ -66,6 +66,10 @@ The general guidelines to dealing, are the following:
 
 4. The deck is then cut onto the 'cut card' and the dealer may deal the cards.
 
+#### Auto-shuffle
+
+Dealer is optionally allowed to use an automatic shuffling machine instead of steps 1-3 above.
+
 ## Blinds
 
 Big blind is established at 1% of the buy-in and increases by that same amount everytime the dealer button has made one full table rotation.
