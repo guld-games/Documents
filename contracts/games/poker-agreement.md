@@ -1,7 +1,23 @@
 # Texas Hold'em Poker Agreement
 
-Agreement made on __________(date), between __________(username), known by signing key __________(public-key), in this agreement refered to as PLAYER, and __________(username), known by signing key __________(public-key), in this agreement referred to as DEALER.
+Agreement made on __________(date), between __________(username), known by signing key __________(public-key), hereinafter refered to as PLAYER, and __________(username), known by signing key __________(public-key), hereinafter referred to as DEALER.
 
+## Joining the game
+
+WHEREAS __________(game-name), hereinafter referred to as GINSTANCE is the name of a unique game of Texas Holdem Poker, consisting of 2 to 10 players.
+
+```
+GIINSTANCE=''
+```
+
+PLAYER is allowed to join a game by transfering 1 buy-in fee of __________(buy-in) GG , hereinafter refered to as BUYIN, or 1 re-buy fee of __________(re-buy) GG into the GINSTANCE contract. 
+
+```
+BUYIN=''
+```
+```
+REBUY=''
+```
 ## Objective
 
 The objective of the game is for PLAYER to collect all chips in the table. 
@@ -24,15 +40,21 @@ Poker hand rankings used in this game are the following:
 8. One pair
 9. High card
 
-## Joining the game
-
-WHEREAS __________(game-name), hereinafter referred to as GINSTANCE is the name of a unique game of Texas Holdem Poker, consisting of 2 to 10 players.
-
-WHEREAS PLAYER has deposited the table's fixed GG buy-in fee into the GINSTANCE contract.
-
 ## The Dealer
 
 PLAYER agrees that DEALER will receive 3% of the total buy-in fees deposited into the GINSTANCE contract. 
+
+DEALER agrees to follow procedures according to the following wikihow article: https://www.wikihow.com/Shuffle-and-Deal-Texas-Holdem. 
+
+The general guidelines to dealing, are the following:
+
+1. The cards are always shuffled before dealing.
+
+2. After shuffling twice, the deck is stripped by taking off approximately 1/3 of the top of the cards, which are then set on the table. The middle section is then placed on top. Finally the bottom third is placed on top of the others. 
+
+3. The cards are shuffled again. 
+
+4. The deck is then cut onto the 'cut card' and the dealer may deal the cards.
 
 ## Blinds
 
@@ -43,6 +65,7 @@ Small blind is imposed on the player left to the dealer button and big blind to 
 ## Betting
 
 The minimum bet is equal to the size of the big blind, hereinafter refer to as MINIMUM-BET. 
+
 The maximum bet is the total amount of all of your chips, hereinafter refered to as MAXIMUM-BET.
 
 ## Raising
