@@ -1,6 +1,6 @@
 # Texas Hold'em Poker Agreement
 
-Agreement made on __________(date), between __________(username), known by signing key __________(public-key), in this agreement referred to as PLAYER, and __________(username), known by signing key __________(public-key), in this agreement referred to as DEALER.
+Agreement made on __________(date), between __________(username), known by signing key __________(public-key), in this agreement refered to as PLAYER, and __________(username), known by signing key __________(public-key), in this agreement referred to as DEALER.
 
 ## Objective
 
@@ -26,7 +26,7 @@ Poker hand rankings used in this game are the following:
 
 ## Joining the game
 
-WHEREAS <game-name>, hereinafter referred to as GINSTANCE is the name of a unique game of Texas Holdem Poker, consisting of 2 to 10 players.
+WHEREAS __________(game-name), hereinafter referred to as GINSTANCE is the name of a unique game of Texas Holdem Poker, consisting of 2 to 10 players.
 
 WHEREAS PLAYER has deposited the table's fixed GG buy-in fee into the GINSTANCE contract.
 
