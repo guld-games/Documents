@@ -11,13 +11,17 @@ WHEREAS __________(game-name), hereinafter referred to as GINSTANCE is the name 
 ```
 GIINSTANCE=''
 ```
+
 PLAYER is allowed to join a game by transfering 1 buy-in fee of __________(buy-in) GG , hereinafter refered to as BUYIN, or 1 re-buy fee of __________(re-buy) GG into the GINSTANCE contract. 
+
 ```
 BUYIN=''
 ```
+
 ```
 REBUY=''
 ```
+
 PLAYER is only allowed 1 BUYIN and 1 REBUY.
 
 ## Objective
@@ -44,10 +48,12 @@ Poker hand rankings used in this game are the following:
 
 ## The Dealer
 
-PLAYER agrees that DEALER will receive __________(dealer-fee) GG of the total buy-in fees deposited into the GINSTANCE contract, hereinafter refered to as DEALER-FEE. 
+PLAYER agrees that DEALER will receive __________(dealer-fee) % of the total buy-in fees deposited into the GINSTANCE contract, hereinafter refered to as DEALER-FEE. 
+
 ```
 DEALER-FEE=''
 ```
+
 DEALER agrees to follow procedures according to the following wikihow article: https://www.wikihow.com/Shuffle-and-Deal-Texas-Holdem. 
 
 The general guidelines to dealing, are the following:
@@ -84,7 +90,7 @@ Distribution and denomination of starting chips is determined by majority consen
 
 ## Game Play
 
-The game starts when DEALER deals two cards to each PLAYER, hereinafter referred to as the PRE-FLOP.  
+The game starts when DEALER deals two cards to each PLAYER, hereinafter referred to as the PRE-FLOP.
 
 Betting begins with the player to the left of the small blind, which has to either CALL the bet, RAISE or FOLD.
 
