@@ -24,7 +24,7 @@ PLAYER is only allowed 1 BUYIN and 1 REBUY.
 
 The objective of the game is for PLAYER to collect all chips in the table. 
 
-Chips are collected by either having the best hand possible using any combination of your two cards and the five community cards on the table, which are dealt by DEALER.
+Chips are collected by either having the best hand possible using any combination of your two cards and the five community cards on the table, which are dealt by DEALER, or by winning the corresponding bet in a hand.
 
 ## Hands
 
