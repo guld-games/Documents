@@ -44,8 +44,10 @@ Poker hand rankings used in this game are the following:
 
 ## The Dealer
 
-PLAYER agrees that DEALER will receive 3% of the total buy-in fees deposited into the GINSTANCE contract. 
-
+PLAYER agrees that DEALER will receive __________(dealer-fee) GG of the total buy-in fees deposited into the GINSTANCE contract, hereinafter refered to as DEALER-FEE. 
+```
+DEALER-FEE=''
+```
 DEALER agrees to follow procedures according to the following wikihow article: https://www.wikihow.com/Shuffle-and-Deal-Texas-Holdem. 
 
 The general guidelines to dealing, are the following:
