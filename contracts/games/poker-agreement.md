@@ -1,3 +1,5 @@
+
+
 # Texas Hold'em Poker Agreement
 
 Agreement made on __________(date), between __________(username), known by signing key __________(public-key), hereinafter refered to as PLAYER, and __________(username), known by signing key __________(public-key), hereinafter referred to as DEALER.
@@ -9,15 +11,15 @@ WHEREAS __________(game-name), hereinafter referred to as GINSTANCE is the name 
 ```
 GIINSTANCE=''
 ```
-
 PLAYER is allowed to join a game by transfering 1 buy-in fee of __________(buy-in) GG , hereinafter refered to as BUYIN, or 1 re-buy fee of __________(re-buy) GG into the GINSTANCE contract. 
-
 ```
 BUYIN=''
 ```
 ```
 REBUY=''
 ```
+PLAYER is only allowed 1 BUYIN and 1 REBUY.
+
 ## Objective
 
 The objective of the game is for PLAYER to collect all chips in the table. 
