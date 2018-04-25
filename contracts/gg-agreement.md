@@ -100,7 +100,7 @@ WHEREAS AMOUNT is a positive number of GG, and MEMBER has at least AMOUNT in `ME
 DATE * GG transfer
     ; timestamp: TIME
     MEMBER:Assets   -AMOUNT GG
-    gg:Assets:OTHER    AMOUNT GG
+    OTHER:Assets    AMOUNT GG
 ```
 
 ##### Claim Win (Optional Stake)
@@ -116,9 +116,9 @@ WHEREAS AMOUNT is the total winnings minus STAKE_AMOUNT
 ``` ledger
 DATE * GG claim win
     ; timestamp: TIME
-    gg:Games:GAME:GAME-INSTANCE:MEMBER    -AMOUNT GG
+    gg:Games:GAME:GAME-INSTANCE    -AMOUNT GG
     MEMBER:Assets    -AMOUNT GG
-    gg:Games:GAME:GAME-INSTANCE:MEMBER    -STAKE_AMOUNT GG
+    gg:Games:GAME:GAME-INSTANCE    -STAKE_AMOUNT GG
     gg:Equity:MEMBER    -STAKE_AMOUNT GG
 ```
 
