@@ -2,7 +2,7 @@
 
 # Texas Hold'em Poker Agreement
 
-Agreement made on __________(date), between __________(username), known by signing key __________(public-key), hereinafter refered to as PLAYER, and __________(username), known by signing key __________(public-key), hereinafter referred to as DEALER.
+Agreement made on __________(date), between __________(username), known by signing key __________(public-key), hereinafter referred to as PLAYER, and __________(username), known by signing key __________(public-key), hereinafter referred to as DEALER.
 
 ## Joining the game
 
