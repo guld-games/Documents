@@ -6,8 +6,7 @@
 
 The GG app serves as a wallet for the new GG token. In addition to allowing players to run such games as live poker tournaments, the app introduces GG Lottery, the world's first provably-fair game with exactly even odds and no house.
 
-**IRA IS COMING UP WITH A BETTER QUOTE**
-[Guld Games leader, Ira Miller, said, “This is a great step forward for Guld Games, and for the Guld ecosystem as a whole. The GG token and games run on the Guld platform, and we have architected this app as a model for others to follow. We're excited to see the great things our community members will create with it!”]
+Guld Games leader, Ira Miller, said, “This is a great step forward for Guld Games, and for the Guld ecosystem as a whole. The GG token and games run on the Guld platform, and we have architected this app as a model for others to follow. We're excited to see the great things our community members will create with it!”
 
 For more information on Guld Games, visit [https://guld.gg](https://guld.gg/).
 
